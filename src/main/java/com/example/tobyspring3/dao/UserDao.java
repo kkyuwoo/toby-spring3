@@ -11,7 +11,7 @@ public class UserDao {
     //return type이 Connection
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         Map<String, String> env = getenv();
-        String dbHost = env.get("DgB_HOST");
+        String dbHost = env.get("DB_HOST");
         String dbUser = env.get("DB_USER");
         String dbPassword = env.get("DB_PASSWORD");
 
